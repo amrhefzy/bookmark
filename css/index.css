@@ -1,0 +1,31 @@
+body {
+    background-color: #f8ecd1;
+}
+
+.containers {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #222;
+    display: inline-block;
+    background: linear-gradient(to right, #f2a104 0%, #f2a104 30%, transparent 30%);
+    padding: 0 10px;
+}
+
+.divider {
+    border-bottom: 1px dotted #444;
+    margin: 20px 0;
+}
+
+.sub-header p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.sub-header span {
+    color: #4caf50;
+}

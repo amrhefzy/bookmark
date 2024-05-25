@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookMarks</title>
+    <link rel="icon" type="image/png" href="./imgs/imgs/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="containers">
+        <div class="header">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="divider"></div>
+        <div class="sub-header">
+            <p><span>&#128278;</span> Bookmark your favorite sites <span>&#128278;</span></p>
+        </div>
+    </div>
+    <div class="container">
+        
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputproductName1" class="form-label">Websit Name :</label>
+                <input type="text" class="form-control " id="exampleInputproductName1" aria-describedby="productNameHelp">
+                <div id="productNameHelp" class="form-text">ex..samsung</div>
+                <div class="alert alert-danger d-none " id="productName">
+                    <ul>
+                        <li>Site name must be 3 char </li>
+                        <li>Site name must less than 20 char</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputproductCategory1" class="form-label">Site URL :</label>
+                <input type="text" class="form-control" id="exampleInputproductCategory1" aria-describedby="productCategoryHelp">
+                <div id="productCategoryHelp" class="form-text">ex..samsung</div>
+                <div class="alert alert-danger d-none" id="productCategory">
+                    <ul>
+                        <li>Site url must be 8 char  or more</li>
+                        <li>Site url must end by . like .com etc...</li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <button onclick="addSite()" class="btn btn-primary" id="addBtn">Submit</button>
+    </div>
+    
+    <div class="container py-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">delete</th>
+                </tr>
+                
+            </thead> 
+            <tbody id="Tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</html>
